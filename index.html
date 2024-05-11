@@ -10,35 +10,46 @@
             color: white;
             font-family: Arial, sans-serif;
             margin: 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
             height: 100vh;
-            justify-content: space-between;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
-        .title {
+        .viewport {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .unbelshop {
             font-size: 48px;
             font-family: 'Times New Roman', Times, serif; /* Fancy font */
-            margin-top: 30px; /* Adjust spacing */
+            margin-bottom: 180px;
         }
         .button-container {
             display: flex;
             justify-content: center;
             align-items: center;
-            margin-bottom: 20px; /* Adjust spacing between buttons */
+            margin-bottom: 150px;
         }
         button {
             width: 200px;
             height: 200px;
-            background-color: #222; /* Solid color */
             color: white;
             border: none;
             cursor: pointer;
             transition: opacity 0.5s ease;
-            border-radius: 10px; /* Adjust border radius for slightly rounded corners */
-            outline: none; /* Remove default focus outline */
+            border-radius: 10px;
+            outline: none;
             font-size: 18px;
-            margin: 0 10px; /* Adjust spacing between buttons */
+            margin: 0 10px;
+        }
+        button.pack1 {
+            background-color: #222;
+        }
+        button.gold-pack {
+            background: linear-gradient(to right, #FFD700 0%, #FFA500 100%);
         }
         button:hover {
             opacity: 0.8;
@@ -47,30 +58,36 @@
             opacity: 0;
         }
         .footer-container {
-            position: fixed;
-            bottom: 10px; /* Adjust bottom position as needed */
-            left: 10px; /* Adjust left position as needed */
             color: white;
             font-size: 12px;
             display: flex;
             align-items: center;
+            position: fixed;
+            bottom: 10px;
+            left: 10px;
         }
         .logo-img {
-            width: 30px; /* Adjust width as needed */
+            width: 30px;
             height: auto;
-            margin-right: 5px; /* Adjust margin as needed */
+            margin-right: 5px;
+        }
+        a {
+            color: white;
+            text-decoration: none;
         }
     </style>
 </head>
 <body>
-    <div class="title">UnbelShop</div>
-    <div class="button-container">
-        <button>Pack 1</button>
-        <button>Gold Pack</button>
+    <div class="viewport">
+        <div class="unbelshop">UnbelShop</div>
+        <div class="button-container">
+            <button class="pack1">Pack 1</button>
+            <button class="gold-pack">Gold Pack</button>
+        </div>
     </div>
     <div class="footer-container">
         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/600px-Instagram_logo_2022.svg.png" alt="Instagram Logo" class="logo-img">
-        <span>@unbeleuchtt</span>
+        <a href="https://www.instagram.com/unbeleuchtt" target="_blank">@unbeleuchtt</a>
     </div>
 </body>
 </html>
