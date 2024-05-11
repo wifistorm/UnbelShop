@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UnbelShop</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 100vh;
+            justify-content: space-between;
+        }
+        .title {
+            font-size: 48px;
+            font-family: 'Times New Roman', Times, serif; /* Fancy font */
+            margin-top: 30px; /* Adjust spacing */
+        }
+        .button-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-grow: 1;
+        }
+        button {
+            width: 200px;
+            height: 200px;
+            background-color: #222; /* Solid color instead of gradient */
+            color: white;
+            border: none;
+            cursor: pointer;
+            transition: opacity 0.5s ease;
+            border-radius: 10px; /* Adjust border radius for slightly rounded corners */
+            outline: none; /* Remove default focus outline */
+            font-size: 18px;
+        }
+        button:hover {
+            opacity: 0.8;
+        }
+        button.clicked {
+            opacity: 0;
+        }
+        .footer-container {
+            position: fixed;
+            bottom: 10px; /* Adjust bottom position as needed */
+            left: 10px; /* Adjust left position as needed */
+            color: white;
+            font-size: 12px;
+            display: flex;
+            align-items: center;
+        }
+        .logo-img {
+            width: 30px; /* Adjust width as needed */
+            height: auto;
+            margin-right: 5px; /* Adjust margin as needed */
+        }
+    </style>
+</head>
+<body>
+    <div class="title">UnbelShop</div>
+    <div class="button-container">
+        <button>Pack 1</button>
+    </div>
+    <div class="footer-container">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/600px-Instagram_logo_2022.svg.png" alt="Instagram Logo" class="logo-img">
+        <span>@unbeleuchtt</span>
+    </div>
+</body>
+</html>
