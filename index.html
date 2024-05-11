@@ -25,12 +25,12 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            flex-grow: 1;
+            margin-bottom: 20px; /* Adjust spacing between buttons */
         }
         button {
             width: 200px;
             height: 200px;
-            background: linear-gradient(to right, #FFD700 0%, #FFA500 100%); /* Yellow gradient */
+            background-color: #222; /* Solid color */
             color: white;
             border: none;
             cursor: pointer;
@@ -38,6 +38,7 @@
             border-radius: 10px; /* Adjust border radius for slightly rounded corners */
             outline: none; /* Remove default focus outline */
             font-size: 18px;
+            margin: 0 10px; /* Adjust spacing between buttons */
         }
         button:hover {
             opacity: 0.8;
@@ -64,6 +65,7 @@
 <body>
     <div class="title">UnbelShop</div>
     <div class="button-container">
+        <button>Pack 1</button>
         <button>Gold Pack</button>
     </div>
     <div class="footer-container">
